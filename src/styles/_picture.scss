@@ -1,0 +1,50 @@
+.pictures {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .picture {
+    padding: 1rem;
+    width: 400px;
+    p {
+      display: flex;
+      justify-content: center;
+      font-size: 1.25rem;
+      margin: 0.25rem 0rem;
+      color: black;
+    }
+    .imageContainer {
+      overflow: hidden;
+      height: 40vh;
+      border-radius: 20px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.3s ease;
+        &:hover {
+          transform: scale(1.25);
+        }
+      }
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      button {
+        font-size: 1rem;
+        margin-top: 0.5rem;
+        padding: 0.25rem;
+        border: 3px solid rgb(91, 113, 110);
+        background-color: rgb(123, 163, 161);
+        border-radius: 10px;
+        cursor: pointer;
+        a {
+          color: white;
+          padding: 1.25rem;
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
